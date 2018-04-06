@@ -1,0 +1,147 @@
+.preload-overlay
+section.header
+	.wrapper
+		.wrapper-outer
+			.wrapper-inner
+				.container
+					.row
+						+col-d(12,6,6,6)
+							p.header_text
+								span
+									span.header_line Hello,
+								span
+									span(data-text='I\'m Vlad Tesnitcky').bold.glitch I'm Vlad Tesnitcky
+								span
+									span.header_line a frontend-developer
+								span
+									span.header_line enjoing my job
+						+col-d(12,6,6,6, 'hidden-xs')
+							.header_photo
+									img(src='img/photo-capture.png').photo
+
+						//- 
+section.skills
+	.wrapper
+		.wrapper-outer
+			.wrapper-inner
+				.container.skills_container
+					.row
+						+col-d(12,12,12,12)
+							h2(data-text='skills').skills_h2.glitch skills
+						+col-d(12,6,6,6)
+							p.skills_text.skills_text__1
+									span.skills-line html5, css3, vanilla.js, git, bem
+									span.skills-line Sass/Scss, less, Pug.js (Jade)
+									span.skills-line Gulp.js , W3C, PageSpeed Insights
+									spna.skills-line compression of images and code, sprites, deleting extra styles, postcss
+						+col-d(12,6,6,6)
+							p.skills_text.skills_text__2
+									span.skills-line JQuery, Bootstrap, Vue.js, React.js, 
+									span.skills-line Animate.css, Single page applications, Rest API
+									span.skills-line work experience more than a year. remote work. team work
+									span.skills-line blind typing with 10 fingers, VIM, Adobe Photoshop, english (Intermediate)
+
+
+
+section.works
+	.container-fluid
+		.row.works_row__bd-bottom-1
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__1')
+				.works_item.works_text-wrapper
+					.works_text-inner
+						a(href='https://vlad-mayer.xyz/pages/aventura' target='_blank').works_text.works_text__1
+							span.title Aventura
+							span.intro amusement park
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__2')
+				.works_item
+					img(src='img/aventura.png').works_img.works_img__right
+		.row.works_row__bd-bottom-1
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__1')
+				.works_item.works_item-img__3
+					img(src='img/cuda2.png').works_img.works_img__3.works_img__left
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__2')
+				.works_item.works_text-wrapper
+					.works_text-inner
+						a(href='https://vlad-mayer.xyz/pages/cuda' target='_blank').works_text.works_text__1
+							span.title cuda
+							span.intro design agency's portfolio
+		.row
+			+col-d(12,6,6,6, 'works_item-wrapper__nbd works_item-wrapper__nbd-1')
+				.works_item.works_text-wrapper
+					.works_text-inner
+						a(href='https://vlad-mayer.xyz/pages/flatmate' target='_blank').works_text.works_text__2
+							span.title flatmate
+							span.intro minimalistic design
+							
+			+col-d(12,6,6,6, 'works_item-wrapper__nbd works_item-wrapper__nbd-2')
+				.works_item
+					img(src='img/flatmate.png').works_img__nbd.works_img__nbd-right
+		.row.works_row__bd-bottom-1.works_row__bd-top-1
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__1')
+				.works_item
+					img(src='img/sliderport.png').works_img.works_img__left
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__2')
+				.works_item.works_text-wrapper
+					.works_text-inner
+						a(href='https://vlad-mayer.xyz/pages/sliderport' target='_blank').works_text.works_text__1
+							span.title Any Key
+							span.intro web-development
+		//- .row.works_row__bd-bottom-1.works_row__bd-top-1
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__1')
+				.works_item.works_text-wrapper
+					.works_text-inner
+						a(href='' target='_blank').works_text.works_text__1
+							span.title Lorem
+							span.intro text intro bla bla
+			+col-d(12,6,6,6, 'works_item-wrapper works_item-wrapper__2')
+				.works_item.works_item__5
+					img(src='img/promo.png').works_img.works_img__right
+		.row
+			+col-d(12,6,6,6, 'works_item-wrapper__nbd works_item-wrapper__nbd-1')
+				.works_item
+					img(src='img/wieserpro.png').works_img__nbd.works_img__nbd-left
+			+col-d(12,6,6,6, 'works_item-wrapper__nbd works_item-wrapper__nbd-2')
+				.works_item.works_text-wrapper
+					.works_text-inner
+						a(href='https://vlad-mayer.xyz/pages/wieser-pro' target='_blank').works_text.works_text__2
+							span.title wieser pro
+							span.intro price monitoring system
+section.works-2
+	.container
+		.row
+			+col-d(12,12,12,12)
+				h2.works-2_h2 u wanna more work examples?
+			+col-d(12,6,4,4, 'works-2_wrapper')
+				a(href='https://vlad-mayer.xyz/pages/clean' target='_blank').works-2_wrapper-inner
+					img(src='img/clean.png').works-2_img
+			+col-d(12,6,4,4, 'works-2_wrapper')
+				a(href='https://vlad-mayer.xyz/pages/tajam' target='_blank').works-2_wrapper-inner
+					img(src='img/tajam.png').works-2_img
+			+col-d(12,6,4,4, 'works-2_wrapper')
+				a(href='https://vlad-mayer.xyz/pages/mihstore' target='_blank').works-2_wrapper-inner
+					img(src='img/mihstore.png').works-2_img
+		.row
+			+col-d(12,6,8,8, 'works-2_wrapper')
+				a(href='https://vlad-mayer.xyz/pages/osd' target='_blank').works-2_wrapper-inner
+					img(src='img/osd.png').works-2_img
+			+col-d(12,6,4,4, 'works-2_wrapper')
+				a(href='https://vlad-mayer.xyz/pages/flatminimal' target='_blank').works-2_wrapper-inner
+					img(src='img/flatminimal.png').works-2_img
+			//- +col-d(12,6,4,4, 'works-2_wrapper')
+			//- 	.works-2_wrapper-inner
+			//- 		img(src='img/flatminimal.png').works-2_img.d-n
+section.feedback
+	.container
+		.row
+			+col-d(12,12,6,6)
+				h2.feedback_h2 feedback
+				p.feedback_text
+					span.skills_line.feedback_line webdev.vlad.tesnitcky@gmail.com
+					span.skills_line.feedback_line +7 (919) 833-89-77
+			+col-d(12,12,6,6)
+				h2(data-text='(wanna u\'r sweet project)').feedback_h2.glitch (wanna u'r sweet project)
+section.footer
+	.container
+		.row
+			+col-d(12,12,6,6)
+				p.footer_text 2017 | pebR1iiny project

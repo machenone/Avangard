@@ -1,0 +1,95 @@
+.glitch {
+    color: #fff;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 3.6rem;
+    &:before {
+        content: attr(data-text);
+        position: absolute;
+        left: -2px;
+        text-shadow: 1px 0 blue;
+        top: 0;
+        color: white;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 3s infinite linear alternate-reverse;
+    }
+    &:after {
+        content: attr(data-text);
+        position: absolute;
+        left: 2px;
+        text-shadow: -1px 0 red;
+        top: 0;
+        color: white;
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 2s infinite linear alternate-reverse;
+    }
+}
+
+@keyframes noise-anim {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        }
+    }
+}
+
+@keyframes noise-anim-2 {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        }
+    }
+}
+
+// pixel image load
+
+.pixel-load{
+  background-position: -4960px; 
+  /* 
+  shorthand would be 
+  -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards; 
+  but that does not work with safari.
+  */
+  
+  -webkit-animation-name: gif;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: steps(17,start);
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+  -ms-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+  -o-animation: gif 1s steps(17,start) 1.5s 1 forwards;
+  animation: gif 1s steps(17,start) 1.5s 1 forwards;
+}
+  
+  @-webkit-keyframes gif{
+  0% {background-position: -5270px}
+  100% {background-position: 1px}
+  }
+
+  @-moz-keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 1px}
+  }
+
+  @-ms-keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 1px}
+  }
+
+  @-o-keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 1px}
+  }
+
+  @keyframes gif{
+  from{background-position: -5270px}
+  to{background-position: 0}
+  }
